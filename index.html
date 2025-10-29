@@ -1,27 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ipv?</title>
-  </head>
-  <body>
-    <p id="ipinfo">Checking your connection...</p>
-
-    <script>
-      fetch("https://api64.ipify.org?format=json")
-        .then((res) => res.json())
-        .then((data) => {
-          const ip = data.ip;
-          const type = ip.includes(":") ? "IPv6" : "IPv4";
-          document.getElementById(
-            "ipinfo"
-          ).innerText = `You are using ${type} to access this website (${ip})`;
-        })
-        .catch(() => {
-          document.getElementById("ipinfo").innerText =
-            "Could not detect your IP version.";
-        });
-    </script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:3</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1 class="text-5xl flex justify-content align-items">lol</h1>
+</body>
 </html>
